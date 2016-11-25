@@ -1,0 +1,22 @@
+{
+    "name": "evoluted/feefo",
+    "description": "A generic Feefo PHP SDK package.",
+    "homepage": "https://github.com/EvolutedNewMedia/feefo"
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rick Mills",
+            "email": "rick@evoluted.net"
+        },
+        {
+            "name": "Evoluted New Media",
+            "email": "developers@evoluted.net"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "6.2.*"
+    },
+    "autoload": {
+        "psr-4": { "Evoluted\\Feefo\\": ["src/"] }
+    }
+}
