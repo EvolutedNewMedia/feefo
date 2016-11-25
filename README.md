@@ -22,12 +22,12 @@ $feefo = new Evoluted\Feefo\Feefo(
 Once initialised you are able to retrive the latest reviews with:
 
 ```
-$feefo->reviews()
+$feefo->reviews();
 ```
 You can optionally increase or decrease the number of results from the default of 5 like so:
 
 ```
-$feefo->reviews(10)
+$feefo->reviews(10);
 ```
 
 ###Custom Calls
