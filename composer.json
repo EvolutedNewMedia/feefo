@@ -1,7 +1,7 @@
 {
     "name": "evoluted/feefo",
     "description": "A generic Feefo PHP SDK package.",
-    "homepage": "https://github.com/EvolutedNewMedia/feefo"
+    "homepage": "https://github.com/EvolutedNewMedia/feefo",
     "license": "MIT",
     "authors": [
         {

@@ -7,7 +7,7 @@ use \GuzzleHttp\Psr7\Response;
 /**
  * The Feefo api package provides a generic api to integrate with Feefo. 
  *
- * Out of the box it provides a way of retrieving revies and product ratings,
+ * Out of the box it provides a way of retrieving reviews and product ratings,
  * however also allows you to make custom calls to the api, such as posting 
  * sales details.
  *
@@ -87,7 +87,7 @@ class Feefo
      */
     public function get($endpoint, $params)
     {
-        return $this->__request($endpoint, $params);
+        return $this->request($endpoint, $params);
     }
 
     /**
@@ -100,7 +100,7 @@ class Feefo
      */
     public function post($path, $params)
     {
-        return $this->__request($endpoint, $params, 'post');
+        return $this->request($endpoint, $params, 'post');
     }
 
     /**
@@ -112,7 +112,7 @@ class Feefo
      * 
      * @return object Returns the decoded response object
      */
-    private function __request($endpoint, $params, $type = 'get')
+    private function request($endpoint, $params, $type = 'get')
     {
         $client = new \GuzzleHttp\Client(['base_uri' => $this->apiUrl]);
 
