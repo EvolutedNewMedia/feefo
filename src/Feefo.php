@@ -63,7 +63,7 @@ class Feefo
                 $reviews[] = [
                     'url ' => $review->url,
                     'customer_name' => (! empty($review->customer->display_name) ? $review->customer->display_name : null),
-                    'location' => (! empty($review->customer->location) ? $review->customer->location : null),
+                    'location' => (! empty($review->customer->display_location) ? $review->customer->display_location : null),
                     'rating_min' => $review->service->rating->min,
                     'rating_max' => $review->service->rating->max,
                     'rating' => $review->service->rating->rating,
@@ -98,7 +98,7 @@ class Feefo
      * 
      * @return object Returns the full api response
      */
-    public function post($path, $params)
+    public function post($endpoint, $params)
     {
         return $this->request($endpoint, $params, 'post');
     }
